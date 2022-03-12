@@ -5,7 +5,8 @@
 */
 #include <stdio.h>
 /* main -is void */
-int main(voiI);
+int main(void)
+
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
