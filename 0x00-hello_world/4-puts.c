@@ -1,10 +1,13 @@
 /**
- * main -is void
- * Prints with puts to standard output
- * Return 0 is completed, else if otherwise
-*/
+ * main - makes void
+ * @void: nothing to declare
+ *
+ * Description: for the purpose of coding with puts
+ * Return: void if successful
+ */
+
 #include <stdio.h>
-/* main -is void */
+
 int main(void)
 
 {
