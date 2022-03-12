@@ -1,4 +1,4 @@
-/*C Program to use printf*/
+/* C Program to use printf */
 #include <studio.h>
 int main(void)
 {
