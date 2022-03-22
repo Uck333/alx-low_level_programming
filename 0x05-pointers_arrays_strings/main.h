@@ -1,3 +1,7 @@
-// functions for my project
-// declared for each task
-void reset_to_98
+/**
+ * functions for my c program
+ * nil important declaration
+ *
+ * reset -to zero
+ */
+void reset_to_9I(int *n);
