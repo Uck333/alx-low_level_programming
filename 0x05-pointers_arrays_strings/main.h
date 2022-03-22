@@ -4,4 +4,5 @@
  *
  * reset -to zero
  */
-void reset_to_9I(int *n);
+void reset_to_98(int *n);
+void puts_half(char *str);
