@@ -1,19 +1,10 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * main - checks the code
- * @var - nil
+ * _puts - checks the code
+ * @str: nil to declare
  *
- * puts: to print a string
  * Return: zero
  */
-void _puts(char *str) {
-	*str = "I do not fear computers. I fear the lack of them - Isaac Asimov"}
-	int main(void)
+void _puts(char *str)
 {
-    char *str;
-
-    str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-    _puts(str);
-    return (0);
-}
+	*str = "I do not fear computers. I fear the lack of them - Isaac Asimov"}
