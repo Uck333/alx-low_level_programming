@@ -8,6 +8,6 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	*dest[] = "Hello ";
-	*src[] = "World!\n";
+	*dest[5] = "Hello ";
+	*src[6] = "World!\n";
 }
