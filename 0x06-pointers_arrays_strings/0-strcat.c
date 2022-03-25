@@ -10,4 +10,5 @@ char *_strcat(char *dest, char *src)
 {
 	*dest[5] = "Hello ";
 	*src[6] = "World!\n";
+	ptr = _strcat(*dest, *src);
 }
