@@ -9,11 +9,16 @@
  */
 int main(void)
 {
-	char i;
-	for(i='a'; i<='z'; i++)
+	int hexa;
+	int dexa;
+	for(hexa='0';hexa<='9';hexa++)
 	{
-	putchar(i);
+		putchar(hexa);
+	}
+	for(dexa='a';dexa='g';dexa++)
+	{
+		putchar(dexa);
 	}
 	putchar('\n');
-	return (0);
+	return 0;
 }

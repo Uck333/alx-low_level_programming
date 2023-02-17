@@ -9,11 +9,17 @@
  */
 int main(void)
 {
-	char i;
-	for(i='a'; i<='z'; i++)
+	int a;
+	for(a='0';a<='9';a++)
 	{
-	putchar(i);
+		putchar(a);
+		if(a<'9')
+		{
+			putchar(44);
+			putchar(32);
+		}
 	}
 	putchar('\n');
-	return (0);
+	return 0;
 }
+
