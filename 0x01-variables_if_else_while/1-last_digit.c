@@ -2,11 +2,11 @@
 #include <stdio.h>
 #include <time.h>
 /**
- * Main - Entry point
+ * main - nil to declare
  * @void - nil
  *
- * Decsription: C programming
- * Return: 0 (success)
+ * Description: c program for alpha
+ * Return: nil if successful
  */
 int main(void)
 {
