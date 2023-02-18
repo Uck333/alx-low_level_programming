@@ -11,14 +11,15 @@ int main(void)
 {
 	int hexa;
 	int dexa;
-	for(hexa = '0'; hexa <= '9'; hexa++)
+
+	for (hexa = '0'; hexa <= '9'; hexa++)
 	{
 		putchar(hexa);
 	}
-	for(dexa = 'a'; dexa <= 'g'; dexa++)
+	for (dexa = 'a'; dexa <= 'g'; dexa++)
 	{
 		putchar(dexa);
 	}
 	putchar('\n');
-	return 0;
+	return (0);
 }
