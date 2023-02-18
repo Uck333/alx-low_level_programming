@@ -16,7 +16,7 @@ int main(void)
 	{
 		putchar(hexa);
 	}
-	for (dexa = 'a'; dexa <= 'g'; dexa++)
+	for (dexa = 'a'; dexa < 'g'; dexa++)
 	{
 		putchar(dexa);
 	}
