@@ -9,9 +9,6 @@
  * Return: zero (success)
  */
 
-/**
- * main - function to print lowercase alpabets
- */
 void print_alphabet(void)
 {
 	char i;

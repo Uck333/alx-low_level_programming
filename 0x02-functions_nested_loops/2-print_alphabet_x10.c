@@ -1,16 +1,14 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
- * main - entry point
+ * print_alphabet_x10 - entry point
  * @nil variables declared
  *
  * Description: A program to print _putchar
  * Return: zero (success)
  */
 
-/**
- * print_alphabet_x10 - function to print lowercase alpabets
- */
 void print_alphabet_x10(void)
 {
 	char i;
@@ -21,16 +19,3 @@ void print_alphabet_x10(void)
 	}
 	_putchar('\n');
 }
-
-int main(void)
-{
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
