@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * print_alphabet - entry point
  * @nil variables declared
  *
  * Description: A program to print _putchar
@@ -10,7 +10,7 @@
  */
 
 /**
- * print_alphabet - function to print lowercase alpabets
+ * main - function to print lowercase alpabets
  */
 void print_alphabet(void)
 {
@@ -22,9 +22,3 @@ void print_alphabet(void)
 	}
 	_putchar('\n');
 }
-
-int main(void)
-{
-	print_alphabet();
-}
-
