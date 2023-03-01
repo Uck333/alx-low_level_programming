@@ -7,14 +7,16 @@
  * print: prints a string in reverse
  * Return: zero
  */
-void print_rev(char *s) {
-	char *s = "I do not fear computers. I fear the lack of them - Isaac Asimov"
-}
-int main(void)
+void print_rev(char *s)
 {
-    char *str;
+	int counter, strLength;
 
-    str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-    print_rev(str);
-    return (0);
+	counter = 0;
+	while (*(s + counter) != '\0')
+		counter++;
+	strLength = counter;
+	counter = 0;
+	while (*(s + counter) != '\0')
+		_putchar(*(s + (strLength - (counter++ + 1))));
+	_putchar('\n');
 }

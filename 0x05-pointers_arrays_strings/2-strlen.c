@@ -7,6 +7,11 @@
  */
 int _strlen(char *s)
 {
-       *s = "My first strlen!";
+	int zone;
+
+	zone = 0;
+	while (*(s + zone) != '\0')
+		zone++;
+	return (zone);
 }
 

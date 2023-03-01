@@ -7,4 +7,7 @@
  */
 void _puts(char *str)
 {
-	*str = "I do not fear computers. I fear the lack of them - Isaac Asimov"}
+	while (*str)
+		_putchar(*str++);
+	_putchar('\n');
+}

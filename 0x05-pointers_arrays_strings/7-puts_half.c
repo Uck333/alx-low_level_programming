@@ -7,15 +7,19 @@
  * puts_half: function to print half of a string
  * Return: always zero
  */
-void puts_half(char *str); {
-	char *str = n>4 || n<9; n++;
-}
-int main(void)
+void puts_half(char *str)
 {
-    char *str;
+	int length, charsToPrint = 0;
 
-    str = "0123456789";
-    puts_half(str);
-    return (0);
+	while (*(str + length) != '\0')
+		length++;
+	if (!(length % 2)) /* if uneven number */
+		charsToPrint = (length - 1) / 2;
+	else
+		charsToPrint = length / 2;
+	charsToPrint++;
+	while (charsToPrint < length)
+		_putchar(*(str + charsToPrint++));
+	_putchar('\n');
 }
 
