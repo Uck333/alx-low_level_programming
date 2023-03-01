@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - checks the code
- * @var - nil to declare
+ * puts_half - checks the code
+ * @str: nil to declare
  *
  * puts_half: function to print half of a string
  * Return: always zero

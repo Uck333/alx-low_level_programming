@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - checks the code
- * @var - nil
+ * rev_string - checks the code
+ * @s: nil
  *
  * rev_string: reverserls a string
  * Return: zero
