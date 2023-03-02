@@ -1,13 +1,23 @@
 #include "main.h"
 /**
- * _strncat - to concatenate two strings
- * @dest: destination string
- * @src: source string
+ * *string_toupper - to concatenate two strings
+ * @x: variable
  *
  * Return: always nil
  */
-char *string_toupper(char *)
+char *string_toupper(char *x)
 {
-	char *[] = " Look up!\n";
-	char *ptr;
+	int length;
+
+	length = 0;
+
+	while (x[length] != '\0')
+	{
+		if (x[length] >= 97 && x[length] <= 122)
+		{
+			x[length] = x[length] - 32;
+		}
+		length++;
+	}
+	return (x);
 }

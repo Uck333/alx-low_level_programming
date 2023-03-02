@@ -1,13 +1,31 @@
 #include "main.h"
 /**
- * _strcat - to concatenate two strings
- * @dest: destination string
- * @src: source string
+ * leet - to concatenate two strings
+ * @s: string variable
  *
  * Return: always nil
  */
-char *leet(char *)
+char *leet(char *s)
 {
-	*[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
-	char *p;
+	int stringCount, leetCount;
+	char leetLetters[] = "aAeEoOtTlL";
+	char leetNums[] = "4433007711";
+
+/*  scan through string */
+	stringCount = 0;
+	while (s[stringCount] != '\0')
+/* check whether leetLetter is found */
+	{
+		leetCount = 0;
+		while (leetCount < 10)
+		{
+			if (leetLetters[leetCount] == s[stringCount])
+			{
+				s[stringCount] = leetNums[leetCount];
+			}
+			leetCount++;
+		}
+		stringCount++;
+	}
+	return (s);
 }
