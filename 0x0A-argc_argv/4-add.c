@@ -14,22 +14,22 @@
 int main(int argc, char *argv[])
 {
 	int count;
-	int count_1;
-	int count_2;
-	int sum;
+	int b;
 
-	if (argc != 2)
+	if (argc <= 1)
 	{
-		printf("Error\n");
-		return (1);
+		printf("0\n");
 	}
-	else
-		for (count = 0; count < argc; count++)
+	for (count = 1; count < (argc - 1); count++)
+		if ((atoi(argv[count])) > 0)
 		{
-			count_1 = atoi(argv[1]);
-			count_2 = atoi(argv[2]);
-			sum = count_1 * count_2;
-			printf("%d\n", sum);
+			b = atoi(argv[count]) + atoi(argv[count + 1]);
+			printf("%d\n", b);
+		}
+		else
+		{
+			printf("Error\n");
+			return (1);
 		}
 	return (0);
 }
