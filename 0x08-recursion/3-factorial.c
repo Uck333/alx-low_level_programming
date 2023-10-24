@@ -2,25 +2,36 @@
 #include "main.h"
 
 /**
- * factorial - prints a string in reverse
- * @n: char variable
+ * factorial - prints the factorial of a particular number
+ * @n: integer variable
  *
- * Return: nil
+ * Description: Returns the factorial of a given number
+ * Return: factorial of an unsigned integer, -1 otherwise.
  */
 
 int factorial(int n)
 {
-	int a;
+	int a = 1;
+	int j;
+	int b;
 
-	if (n < 0)
+	if (n >= 0)
 	{
-		return (-1);
+		if ((n == 0) || (n == 1))
+		{
+			a = (a * 1);
+		}
+		else if (n > 1)
+		{
+			j = (n * (n - 1));
+			a = (j * factorial((n - 1) - 1));
+		}
+		return (a);
 	}
 	else
 	{
-		a = n * factorial(n - 1);
-		return (a);
+		return (-1);
 	}
-
+	return (a * b);
 }
 
