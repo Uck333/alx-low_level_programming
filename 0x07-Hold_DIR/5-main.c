@@ -8,9 +8,11 @@
  */
 int main(void)
 {
-    int n;
-
-    n = _strlen_recursion("Corbin Coleman");
-    printf("%d\n", n);
-    return (0);
+	char *s = "hello, world";
+	char *f = "world";
+	char *t;
+	
+	t = _strstr(s, f);
+	printf("%s\n", t);
+	return (0);
 }
