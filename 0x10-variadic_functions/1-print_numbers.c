@@ -20,13 +20,16 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_start(arg, n);
 
-	if (n == 0)
-		return (0);
+	if (separator == NULL)
+		return;
 	for (i = 0; i < n; i++)
 	{
-		sum = va_arg(a, int);
-		printf("%c
+		sum = va_arg(arg, int);
+		if ((sum <= 0) || (sum > 0))
+		{
+			printf("%d, ", sum);
+		}
 	}
-	va_end(a);
-	return (sum);
+	printf("\n");
+	va_end(arg);
 }
