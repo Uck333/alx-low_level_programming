@@ -22,12 +22,20 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	if (separator == NULL)
 		return;
-	for (i = 0; i < n; i++)
+	for (i = 0; i < (n - 1); i++)
 	{
 		sum = va_arg(arg, int);
 		if ((sum <= 0) || (sum > 0))
 		{
 			printf("%d, ", sum);
+		}
+	}
+	if ((i == (n - 1)))
+	{
+		sum = va_arg(arg, int);
+		if ((sum <= 0) || (sum > 0))
+		{
+			printf("%d", sum);
 		}
 	}
 	printf("\n");

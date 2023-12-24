@@ -1,27 +1,26 @@
+#include <stdio.h>
+#include <unistd.h>
+
 /**
- * main - nothing to declare
- * @void - nil
+ * main - entry point
  *
- * Description: prints sizes of..based on the computer
- * Return: zero is successful
+ * Description: Program prints the size of various types on the computer
+ * Return: Zero for success
  */
 
-#include <stdio.h>
-
-int main(void)
-
+int main()
 {
-	char c;
-	int i;
-	long int l;
-	long long int m;
-	float f;
-
-	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(c));
-	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(i));
-	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(l));
-	printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(m));
-	printf("size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
-
+	char a;
+	int b;
+	long int c;
+	long long int d;
+	float e;
+	
+	printf("Size of a char: %d byte(s)\n", sizeof(a));
+	printf("Size of an int: %d byte(s)\n", sizeof(b));
+	printf("Size of a long int: %d byte(s)\n", sizeof(c));
+	printf("Size of a long long int: %d byte(s)\n", sizeof(d));
+	printf("Size of a float: %d byte(s)\n", sizeof(e));
 	return (0);
 }
+

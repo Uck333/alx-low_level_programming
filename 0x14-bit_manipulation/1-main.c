@@ -1,4 +1,5 @@
-#include "variadic_functions.h"
+#include <stdio.h>
+#include "main.h"
 
 /**
  * main - check the code
@@ -7,6 +8,15 @@
  */
 int main(void)
 {
-    print_numbers(", ", 4, 0, 98, -1024, 402);
+    print_binary(0);
+    printf("\n");
+    print_binary(1);
+    printf("\n");
+    print_binary(98);
+    printf("\n");
+    print_binary(1024);
+    printf("\n");
+    print_binary((1 << 10) + 1);
+    printf("\n");
     return (0);
 }
