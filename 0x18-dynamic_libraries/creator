@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -c -fPIC test.c | gcc -shared -o 100-operations.so test.o
